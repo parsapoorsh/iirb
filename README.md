@@ -20,7 +20,7 @@ And exit the environment with `ctrl+a` and `d`
 
 Now on VPS1, use the following commands:  
 `wget https://raw.githubusercontent.com/parsapoorsh/iirb/main/iirb.py`  
-`screen -S ss-server python iirb.py PASSWORD 1.2.3.4 ss://chacha20-ietf-poly1305:PASSWORD@5.6.7.8:80`  
+`screen -S ss-server python3 iirb.py PASSWORD 1.2.3.4 ss://chacha20-ietf-poly1305:PASSWORD@5.6.7.8:80`  
 - Replace 5.6.7.8:80 with IP/domain and port of VPS2
 - Replace 1.2.3.4 with IP/domain and port of VPS1
 
