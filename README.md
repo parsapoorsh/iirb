@@ -11,7 +11,7 @@ This method works like this, you connect to VPS1 from your device in Iran, VPS1 
 
 If you want to build VPS2 yourself, use the following commands:  
 `pip install pproxy`  
-`screen -S ss-server pproxy -r ss://chacha20-ietf-poly1305:PASSWORD@0.0.0.0:80`  
+`screen -S ss-server pproxy -l ss://chacha20-ietf-poly1305:PASSWORD@0.0.0.0:80`  
 And exit the environment with `ctrl+a` and `d`
 - Replace 80 with port of your choice
 - Open the port in firewall with:  
