@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+#REPO -> https://github.com/parsapoorsh/iirb
 from argparse import ArgumentParser
 parser = ArgumentParser(description="Iran's internet restriction bypass using shadowsocks")
 parser.add_argument('spassword', type=str, help='Shadowsocks password for this server')
