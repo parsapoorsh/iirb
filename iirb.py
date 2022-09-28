@@ -25,7 +25,7 @@ for ptype in ('tcp', 'udp'):
         print(f'There is a problem opening the firewall, please open port {args.sport}/{ptype} manually', file=sys.stderr)
 
 servers = [
-    pproxy.Server(f'ss://chacha20-ietf-poly1305:{args.spassword}@0.0.0.0:80')
+    pproxy.Server(f'ss://chacha20-ietf-poly1305:{args.spassword}@0.0.0.0:{args.sport}')
 ]
 
 remote = pproxy.Connection(args.rsserver)
