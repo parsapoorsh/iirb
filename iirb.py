@@ -59,8 +59,10 @@ loop = asyncio.get_event_loop()
 loop.set_exception_handler(lambda *args, **kwargs: None)
 handlers = []
 for server in servers:
-    handlers.append(loop.run_until_complete(server.start_server(hargs)))
-    handlers.append(loop.run_until_complete(server.udp_start_server(hargs)))
+    handlers.extend((
+        loop.run_until_complete(server.start_server(hargs)),
+        loop.run_until_complete(server.udp_start_server(hargs)),
+    ))
 
 try:
     print(
