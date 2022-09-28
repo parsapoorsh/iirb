@@ -4,9 +4,9 @@
 One in Iran, for example, has the name VPS1 and the IP address 1.2.3.4
 One outside of Iran, for example, has the name VPS2 and the IP address 5.6.7.8, or you can use other Shadowsocks servers that VPS1 has access to.
 
-This method works like this, you connect to VPS1 from your device in Iran, VPS1 transfers data to VPS2 and VPS2 sends data to the destination and vice versa.
+This method works like this, you connect to VPS1 from your device in Iran, VPS1 transfers data to VPS2, and VPS2 sends data to the destination and vice versa.
 
-- Note 1: You need a root terminal, enter the root terminal with the `sudo bash` command.
+- Note 1: You need a root terminal; enter the root terminal using `sudo bash` command.
 - Note 2: It is better to use port `80` or `443` for Iranian server.
 
 If you want to build VPS2 yourself, use the following commands:  
@@ -24,7 +24,7 @@ Now on VPS1, use the following commands:
 - Replace 5.6.7.8:80 with IP/domain and port of VPS2
 - Replace 1.2.3.4 with IP/domain and port of VPS1
 
-Congratulations! Now copy 'Batch export share URL' from VPS1 output and enter it in your device.
+Congratulations! Now copy 'Batch export share URL' from VPS1 output and enter it into your device.
 
 You need to install shadowsocks client on your device.  
 For Windows: `outline` or `v2rayn`  
