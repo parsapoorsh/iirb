@@ -1,7 +1,7 @@
 # Iran's internet restriction bypass using shadowsocks
 
 ### You need two VPS with Ubuntu operating system.
-One in Iran, for example, has the name VPS1 and the IP address 1.2.3.4
+One in Iran, for example, has the name VPS1 and the IP address 1.2.3.4  
 One outside of Iran, for example, has the name VPS2 and the IP address 5.6.7.8, or you can use other Shadowsocks servers that VPS1 has access to.
 
 This method works like this, you connect to VPS1 from your device in Iran, VPS1 transfers data to VPS2, and VPS2 sends data to the destination and vice versa.
